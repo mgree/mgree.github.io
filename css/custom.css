@@ -1,0 +1,148 @@
+/* restyling */
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active, .button:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.boxed {
+    background-color: #eee;
+    border-radius: 3rem;
+}
+
+/* header and coordinates */
+
+.container.header {
+    margin-top: 2rem;
+}
+
+img.headshot {
+    border-radius: 4px;
+}
+
+.coordinates .info {
+    text-align: right;
+}
+
+.coordinates .info h5 span {
+    display: inline-block;
+}
+
+.coordinates .links {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 2rem;
+}
+
+.coordinates .links a {
+    display: block;
+    padding: 0 1rem;
+}
+
+.coordinates .links img {
+    width: 16px;
+    height: 16px;
+}
+
+.coordinates .links span {
+    margin-right: 1rem;
+}
+
+.coordinates a.email {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.coordinates .links a span {
+    vertical-align: .2rem;
+}
+
+.coordinates h1 {
+    margin-bottom: .5rem;
+}
+
+/* research statement */
+
+.container.statement {
+    margin-bottom: 2rem;
+    font-size: 130%;
+    line-height: 150%;
+}
+
+/* selected papers table */
+
+table.selected span,
+table.selected .title {
+    display: block;
+}
+
+table.selected th {
+    padding-top: 0px;
+}
+
+/* full paper list */
+
+.paper {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: #e1e1e1 1px solid;
+}
+
+.paper .row:first-child {
+    border-bottom: #e1e1e1 1px solid;
+    padding-bottom: .75rem;
+    margin-bottom: .75rem;
+    font-size: 150%;
+    line-height: 130%;
+}
+
+.paper .venue {
+    text-align: right;
+    color: #888;
+}
+
+.paper .downloads {
+    text-align: right;
+}
+
+.paper .downloads a {
+    display: inline-block;
+    margin: 0 .5rem;
+    padding: .25rem;
+}
+
+/*
+@media (min-width: 550px) {
+    .paper .row:first-child {
+        border-bottom: 0;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+*/
+
+.paper:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.paper:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* utility classes */
+
+.u-clear-bottom {
+    margin-bottom: 3rem;
+}
+
+.u-clear-bottom-short {
+    margin-bottom: 1rem;
+}
+
+.u-center {
+    text-align: center;
+}
