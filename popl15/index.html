@@ -1,0 +1,312 @@
+<html>
+  <head><title>Topic modeling of POPL</title>
+<script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = 'http://owa.weaselhat.com/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '2edf58a2f012b6b08a3c0adc2e4a05a0']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+owa_cmds.push(['trackDomStream']);
+ 
+(function() {
+	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
+</script>
+  </head>
+  <body>
+<div style="text-align: center;"><img src="chart.png" title="Topics of POPL over time"/></div>
+
+<p>
+Topics were derived using David
+Blei's <a href="http://www.cs.princeton.edu/~blei/lda-c/index.html">LDA-C</a>. The
+topic names are made up by a human (me, Michael Greenberg) looking at
+the results of modeling.
+</p>
+
+<pre>
+Semantics
+---------
+Words (mean weight: -182.194745, min weight: -752.183352)
+  semantics (-2.869876)
+  language (-3.207982)
+  specification (-3.745045)
+  model (-3.891790)
+  programming (-3.967519)
+  program (-4.263502)
+  operational (-4.385804)
+  data (-4.413596)
+  definition (-4.464580)
+  denotational (-4.590498)
+
+Control structures
+---------
+Words (mean weight: -193.344610, min weight: -751.318163)
+  program (-3.067599)
+  data (-3.172522)
+  control (-3.821456)
+  dependence (-4.090540)
+  graph (-4.277961)
+  structure (-4.482578)
+  language (-4.549900)
+  technique (-4.666156)
+  flow (-4.695659)
+  programming (-4.736605)
+
+Verification
+---------
+Words (mean weight: -194.065372, min weight: -749.690860)
+  program (-2.843138)
+  procedure (-4.001700)
+  assertion (-4.185580)
+  verification (-4.242991)
+  algorithm (-4.415581)
+  recursive (-4.466424)
+  method (-4.477858)
+  proof (-4.478946)
+  correctness (-4.538495)
+  termination (-4.589940)
+
+Algorithms
+---------
+Words (mean weight: -192.980160, min weight: -746.698680)
+  algorithm (-3.339558)
+  model (-4.236123)
+  program (-4.248243)
+  memory (-4.322128)
+  time (-4.439269)
+  data (-4.668258)
+  problem (-4.748208)
+  operation (-4.749569)
+  graph (-4.756073)
+  tree (-4.863488)
+
+Effects
+---------
+Words (mean weight: -191.637023, min weight: -750.342609)
+  effect (-3.593141)
+  system (-3.645184)
+  program (-3.904110)
+  security (-4.167563)
+  model (-4.231304)
+  computation (-4.290874)
+  information (-4.303216)
+  policy (-4.570917)
+  monad (-4.575563)
+  resource (-4.698953)
+
+Processes
+---------
+Words (mean weight: -186.238857, min weight: -745.941222)
+  process (-3.074359)
+  parallel (-3.938490)
+  program (-3.944270)
+  distributed (-3.949993)
+  system (-4.002103)
+  language (-4.035470)
+  communication (-4.292888)
+  calculus (-4.378973)
+  sequential (-4.438191)
+  model (-4.460063)
+
+Language theory
+---------
+Words (mean weight: -187.011936, min weight: -730.073246)
+  language (-3.778668)
+  higherorder (-3.881803)
+  pattern (-3.886261)
+  type (-4.169344)
+  data (-4.203277)
+  expression (-4.350189)
+  matching (-4.448987)
+  problem (-4.508454)
+  programming (-4.579295)
+  functional (-4.616109)
+
+Data structures and separation logic
+---------
+Words (mean weight: -186.488452, min weight: -752.364448)
+  logic (-2.537509)
+  program (-3.666254)
+  separation (-3.973745)
+  structure (-4.057825)
+  temporal (-4.086462)
+  reasoning (-4.247719)
+  proof (-4.249763)
+  system (-4.409330)
+  data (-4.433120)
+  time (-4.618138)
+
+System design
+---------
+Words (mean weight: -190.838104, min weight: -752.899041)
+  language (-2.786180)
+  programming (-3.241708)
+  system (-3.862692)
+  design (-4.462632)
+  may (-4.807573)
+  construct (-4.868748)
+  property (-4.896521)
+  pattern (-5.080865)
+  beta (-5.126765)
+  program (-5.230323)
+
+Compilation
+---------
+Words (mean weight: -191.928005, min weight: -753.006356)
+  code (-3.273962)
+  compiler (-3.325129)
+  optimization (-3.817611)
+  transformation (-3.903503)
+  proof (-4.069775)
+  program (-4.089716)
+  language (-4.295031)
+  technique (-4.532396)
+  compilation (-4.542068)
+  machine (-4.587511)
+
+Error handling
+---------
+Words (mean weight: -193.519025, min weight: -749.547460)
+  program (-3.519025)
+  error (-3.731229)
+  type (-4.068883)
+  language (-4.499397)
+  object (-4.543930)
+  system (-4.574986)
+  data (-4.603604)
+  set (-4.647004)
+  algorithm (-4.819971)
+  transformation (-4.877258)
+
+Abstract interpretation
+---------
+Words (mean weight: -193.683828, min weight: -738.959291)
+  program (-3.186107)
+  abstract (-3.466172)
+  analysis (-3.921219)
+  domain (-4.013821)
+  property (-4.069536)
+  interpretation (-4.239774)
+  function (-4.264679)
+  invariant (-4.403583)
+  abstraction (-4.493600)
+  framework (-4.666447)
+
+Constraints
+---------
+Words (mean weight: -193.803783, min weight: -752.299978)
+  constraint (-3.014238)
+  programming (-3.639863)
+  language (-3.915945)
+  concurrent (-4.050576)
+  logic (-4.332271)
+  function (-4.356018)
+  program (-4.385152)
+  tree (-4.433756)
+  automaton (-4.524581)
+  problem (-4.781802)
+
+Types
+---------
+Words (mean weight: -192.787400, min weight: -743.637101)
+  type (-3.459619)
+  system (-3.966409)
+  object (-4.270022)
+  language (-4.291895)
+  class (-4.430617)
+  inheritance (-4.489534)
+  calculus (-4.499829)
+  dynamic (-4.552398)
+  programming (-4.679771)
+  protocol (-4.745339)
+
+Parsing and grammars
+---------
+Words (mean weight: -193.938675, min weight: -751.118532)
+  grammar (-2.956085)
+  attribute (-3.364430)
+  parser (-3.762601)
+  lr (-4.214606)
+  technique (-4.238256)
+  parsing (-4.278528)
+  reduction (-4.389917)
+  algorithm (-4.423211)
+  method (-4.424286)
+  production (-4.432827)
+
+Program analysis
+---------
+Words (mean weight: -190.657417, min weight: -753.071332)
+  analysis (-2.483420)
+  program (-3.405975)
+  flow (-3.838004)
+  algorithm (-3.948754)
+  abstraction (-4.104820)
+  data (-4.336627)
+  result (-4.499779)
+  problem (-4.571868)
+  interprocedural (-4.613322)
+  information (-4.757621)
+
+Low-level code
+---------
+Words (mean weight: -192.028992, min weight: -749.561118)
+  program (-3.148100)
+  thread (-3.912736)
+  implementation (-4.154732)
+  space (-4.611581)
+  specification (-4.803652)
+  verification (-4.813415)
+  result (-4.819922)
+  concurrent (-4.876180)
+  problem (-5.004856)
+  number (-5.063136)
+
+Equivalences
+---------
+Words (mean weight: -192.707261, min weight: -751.725630)
+  language (-3.869540)
+  relation (-4.052427)
+  semantics (-4.078114)
+  type (-4.231665)
+  equivalence (-4.426373)
+  higherorder (-4.443144)
+  system (-4.546331)
+  module (-4.654650)
+  logical (-4.656101)
+  program (-4.899128)
+
+Type inference
+---------
+Words (mean weight: -180.432483, min weight: -753.405909)
+  type (-1.980785)
+  system (-3.794404)
+  language (-3.913428)
+  polymorphic (-4.158262)
+  inference (-4.221773)
+  ml (-4.545270)
+  calculus (-4.602193)
+  typing (-4.659267)
+  function (-4.680464)
+  program (-4.699912)
+
+Calculi and language design
+---------
+Words (mean weight: -193.790484, min weight: -746.228007)
+  language (-3.951821)
+  calculus (-4.125599)
+  system (-4.542877)
+  program (-4.579106)
+  game (-4.642392)
+  module (-4.730524)
+  lgr (-4.750621)
+  new (-4.757860)
+  theory (-4.766331)
+  programming (-4.871759)
+</pre>
+</body>
+</html>
