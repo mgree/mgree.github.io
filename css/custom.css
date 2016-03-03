@@ -68,6 +68,7 @@ img.headshot {
 
 .container.statement {
     margin-bottom: 2rem;
+    padding: 0rem;
     font-size: 130%;
     line-height: 150%;
 }
@@ -125,11 +126,11 @@ table.selected th {
 }
 */
 
-.paper:nth-child(even) {
+tr:nth-child(even), .paper:nth-child(even) {
     background-color: #fafafa;
 }
 
-.paper:nth-child(odd) {
+tr:nth-child(odd), .paper:nth-child(odd) {
     background-color: #fff;
 }
 
