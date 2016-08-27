@@ -6,4 +6,4 @@ sync : mgree_bib.html
 
 mgree_bib.html : mgree.bib
 	TMPDIR="." bibtex2html mgree.bib
-	@rm mgree.html
+	@rm mgree.html bib2html*
