@@ -140,6 +140,10 @@ table.selected td.rest {
     padding: .25rem;
 }
 
+.paper .awards {
+    text-align: right;
+}
+
 /*
 @media (min-width: 550px) {
     .paper .row:first-child {
