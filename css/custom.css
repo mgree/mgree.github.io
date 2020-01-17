@@ -64,6 +64,10 @@ img.headshot {
     margin-bottom: .5rem;
 }
 
+ul.activities {
+    columns: 2;
+}
+
 /* leave */
 
 .container.leave {
