@@ -2,11 +2,12 @@
 
 sync : mgree_bib.html
 	@echo MOUNTING WEBSPACE
-	@pomona-www || echo Are you on the VPN?
+	@-umount ~/www
+	@pomona-www || { echo Are you on the VPN? && exit 2 ; }
 	@echo SYNCING POMONA
-	@rsync --exclude Makefile --exclude .git --exclude .gitignore --inplace -Crlv . ~/.local/mnt/pomona-www/
+	@rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .gitignore --inplace -CWaurv . ~/www/
 	@echo CLEANING UP
-	@sudo umount ~/.local/mnt/pomona-www
+	@umount ~/www
 
 mgree_bib.html : mgree.bib
 	TMPDIR="." bibtex2html mgree.bib
