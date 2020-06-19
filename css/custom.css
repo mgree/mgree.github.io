@@ -33,12 +33,14 @@ img.headshot {
 }
 
 .coordinates .links {
+    margin-top: 2rem;
     border-top: 1px solid #e1e1e1;
     padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .coordinates .links a {
-    display: block;
     padding: 0 1rem;
 }
 
