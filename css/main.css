@@ -27,6 +27,8 @@ a:hover, a:focus, a:active, .button:hover {
     text-align: justify;
 }
 
+p { text-align: justify; }
+
 .section > .options {
     margin-left: 1em;
 }
