@@ -1,5 +1,9 @@
 .PHONY: sync
 
+mgree_bib.html : mgree.bib
+	TMPDIR="." bibtex2html mgree.bib
+	-rm mgree.html 
+
 sync : mgree_bib.html
 	@echo MOUNTING WEBSPACE
 	@if mount | grep www; then umount ~/www; fi
@@ -8,7 +12,3 @@ sync : mgree_bib.html
 	@rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .gitignore --exclude .DS_Store --exclude courses --inplace --progress -CWaurv . ~/www/
 	@echo CLEANING UP
 	@umount ~/www
-
-mgree_bib.html : mgree.bib
-	TMPDIR="." bibtex2html mgree.bib
-	-rm mgree.html 
