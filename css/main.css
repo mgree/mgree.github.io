@@ -1,5 +1,6 @@
 body {
     font-family: 'Fira Mono', monospace;
+    font-display: swap
 }
 
 a {
@@ -99,6 +100,8 @@ a#headshot img {
     border-radius: 2rem;
     border-width: 8px;
     color: black;
+    width: 200px;
+    height: 200px;
 }
 
 a#headshot:hover img {
