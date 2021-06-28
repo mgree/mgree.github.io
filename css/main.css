@@ -49,11 +49,15 @@ a:hover, a:focus, a:active, .button:hover {
     display: block;
 }
 
-.downloads {
+.options.papers .downloads {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.5rem;
+    justify-content: start;
+    column-gap: 2rem;
+}
+
+.options.papers .notes, .options.papers .authors {
+    text-align: justify;
 }
 
 .options .description {
