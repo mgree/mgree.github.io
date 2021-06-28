@@ -71,7 +71,7 @@ p { text-align: justify; }
 
 .options.papers .description {
     justify-content: start;
-    padding: 0.3rem;
+    padding-bottom: 0.75rem;
 }
 
 .archive {
