@@ -43,6 +43,10 @@ p { text-align: justify; }
     display: block;
 }
 
+.option div.note {
+    margin-left: 1rem;
+}
+
 .paper a {
     display: block;
 }
