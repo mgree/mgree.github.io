@@ -22,7 +22,7 @@ a:hover, a:focus, a:active, .button:hover {
   box-sizing: border-box;
 }
 
-.section > span, .section > p, .section > .indent {
+.section > span, .section > div, .section > p, .section > .indent {
     margin-left: 1em;
     text-align: justify;
 }
