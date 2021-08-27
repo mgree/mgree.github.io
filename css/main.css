@@ -89,7 +89,8 @@ p { text-align: justify; }
 }
 
 .bar .left, .bar .right { flex: 1; }
-.bar .middle { flex: 3; }
+.bar .middle { flex: 3; text-align: center; }
+.bar .right { text-align: right; }
 
 .footer {
     margin-top: 1rem;
