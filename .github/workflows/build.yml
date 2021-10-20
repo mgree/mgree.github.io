@@ -3,7 +3,7 @@ name: Generate static site
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: '12 10 * * */3'
 
