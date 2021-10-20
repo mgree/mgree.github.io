@@ -1,0 +1,40 @@
+name: Generate static site
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '12 10 * * */3'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Install jekyll
+        run: |
+            sudo gem install jekyll bundler
+            bundle install
+              
+      - name: Build site
+        run: |
+            bundle exec jekyll build
+            tree
+
+      - name: Generate artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site/
