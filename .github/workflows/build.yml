@@ -23,18 +23,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Install jekyll
-        run: |
-            sudo gem install jekyll bundler
-            bundle install
-              
       - name: Build site
         run: |
-            bundle exec jekyll build
+            make
             tree
 
       - name: Generate artifact
         uses: actions/upload-artifact@v2
         with:
           name: site
-          path: _site/
+          path: .
