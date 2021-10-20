@@ -23,6 +23,8 @@ jobs:
       - name: Deploy
         run: |
           mkdir ~/.ssh
+          touch ~/.ssh/id_rsa ~/.ssh/known_hosts ~/.ssh/config
+          chmod 600 ~/.ssh/*
           echo "${{ secrets.SSH_KEY }}" >~/.ssh/id_rsa
           echo "${{ secrets.HOST_KEY }}" >~/.ssh/known_hosts
           cat >~/.ssh/config <<EOF
