@@ -20,21 +20,15 @@ jobs:
             make
             tree
 
-      - name: Generate artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: site
-          path: .
-
       - name: Deploy
         run: |
           mkdir ~/.ssh
-          echo ${{ secrets.SSH_KEY }} >~/.ssh/id_rsa
-          echo ${{ secrets.HOST_KEY }} >~/.ssh/known_hosts
+          echo "${{ secrets.SSH_KEY }}" >~/.ssh/id_rsa
+          echo "${{ secrets.HOST_KEY }}" >~/.ssh/known_hosts
           cat >~/.ssh/config <<EOF
           Host deploy
             Hostname ${{ secrets.HOST_NAME }}
             User ${{ secrets.HOST_USER }}
             IdentityFile ~/.ssh/id_rsa
           EOF
-          rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .gitignore --exclude .DS_Store -Carv . deploy:
+          rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .ssh --exclude .gitignore --exclude .DS_Store -Carv . deploy:
