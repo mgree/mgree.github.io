@@ -29,8 +29,8 @@ jobs:
       - name: Deploy
         run: |
           mkdir ~/.ssh
-          cat ${{ secrets.SSH_KEY }} >~/.ssh/id_rsa
-          cat ${{ secrets.HOST_KEY }} >~/.ssh/known_hosts
+          echo ${{ secrets.SSH_KEY }} >~/.ssh/id_rsa
+          echo ${{ secrets.HOST_KEY }} >~/.ssh/known_hosts
           cat >~/.ssh/config <<EOF
           Host deploy
             Hostname ${{ secrets.HOST_NAME }}
