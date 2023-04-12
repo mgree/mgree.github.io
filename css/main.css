@@ -8,7 +8,7 @@ a {
     color: #00458b;
 }
 
-a:hover, a:focus, a:active, .button:hover {
+a:hover, a:focus, a:active, .button:hover, div.title:hover, div.title:focus, div.title:active, span.title:hover, span.title:focus, span.title:active {
     background-color: #eee;
     border-radius: 4px;
 }
@@ -50,7 +50,7 @@ p { text-align: justify; }
     margin-left: 1rem;
 }
 
-.paper a {
+span.title {
     display: block;
 }
 
