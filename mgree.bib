@@ -1,3 +1,11 @@
+@inproceedings{Liargkovas23hs,
+  author={Georgios Liargkovas and Konstantinos Kallas and Michael Greenberg and Nikos Vasilakis},
+  title = {Executing Shell Scripts in the Wrong Order, Correctly},
+  booktitle = {{HotOS}},
+  year = 2023,
+  doi = {10.1145/3593856.3595891}
+}
+  
 @inproceedings{Mastorou23lh2coq,
   author = {Lykourgos Mastorou and Niki Vazou and Michael Greenberg},
   title = {Towards a Translation from Liquid Haskell to Coq},
@@ -27,7 +35,10 @@
   author = {Aaron Bembenek and Michael Greenberg and Stephen Chong},
   title = {From {SMT} to {ASP}: Solver-Based Approaches to Solving Datalog Synthesis-as-Rule-Selection Problems},
   year = 2023,
-  booktitle = "POPL",
+  volume = 7,
+  number = {POPL},
+  journal = {Proc. ACM Program. Lang.},
+  doi = {10.1145/3571200}
 }
 
 @article{Cassano23multiple,
@@ -45,6 +56,7 @@
   title = {Formulog: Datalog + SMT + FP},
   year = 2022,
   booktitle = "Datalog 2.0",
+  url = {http://ceur-ws.org/Vol-3203/short2.pdf},
 }
 
 @inproceedings{Vazou22funext,
@@ -52,6 +64,7 @@
   title = {How to Safely Use Extensionality in Liquid Haskell},
   year = {2022},
   booktitle = "Haskell Symposium",
+  doi = {10.1145/3546189.3549919}
 }
 
 @inproceedings{Kallas22pash,
@@ -59,6 +72,7 @@
   title = {Practically Correct, Just-in-Time Shell Script Parallelization},
   year = 2022,
   booktitle = "OSDI",
+  url = {https://www.usenix.org/conference/osdi22/presentation/kallas},
 }
 
 @inproceedings{Greenberg22kmt,
@@ -82,18 +96,22 @@
   author = {Luna Phipps-Costin and Carolyn Jane Anderson and Michael Greenberg and Arjun Guha},
   title = {Solver-based Gradual Type Migration},
   publisher = {ACM},
+  volume = 5,
   number = {OOPSLA},
   journal = {Proc. ACM Program. Lang.},
   year = 2021,
+  doi = {10.1145/3485488},
 }
 
 @article{Malewski21adt,
   author = {Stefan Malewski and Michael Greenberg and \'{E}ric Tanter},
   title = {Gradual Algebraic Datatypes},
   publisher = {ACM},
+  volume = 5,
   number = {OOPSLA},
   journal = {Proc. ACM Program. Lang.},
   year = 2021,
+  doi = {10.1145/3485503},
 }
 
 @inproceedings{Greenberg21shell,
@@ -119,20 +137,22 @@ series = {HotOS '21}
 }
 
 @misc{Bembenek20incremental,
-  title = { Datalog-Based Systems Can Use Incremental SMT Solving },
-  author = { Aaron Bembenek and Michael Ballantyne and Michael Greenberg and Nada Amin },
+  title = {Datalog-Based Systems Can Use Incremental SMT Solving},
+  author = {Aaron Bembenek and Michael Ballantyne and Michael Greenberg and Nada Amin},
   year = 2020,
   note = {{ICLP, extended abstract}}
 }
 
 @article{Bembenek20formulog,
-  title = { Formulog: Datalog for SMT-based Static Analysis },
-  author = { Aaron Bembenek and Michael Greenberg and Stephen Chong },
+  title = {Formulog: Datalog for SMT-based Static Analysis},
+  author = {Aaron Bembenek and Michael Greenberg and Stephen Chong},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
+  volume = 4,
   number = {OOPSLA},
   journal = {Proc. ACM Program. Lang.},
-  year = 2020
+  year = 2020,
+  doi = {10.1145/3428209},
 }
 
 @misc{Greenberg20agtadt,
@@ -235,21 +255,24 @@ series = {HotOS '21}
   publisher="Springer International Publishing",
   address="Cham",
   pages="3--23",
-  isbn="978-3-030-14805-8"
+  isbn="978-3-030-14805-8",
+  doi = {10.1007/978-3-030-14805-8\_1},
 }
 
 @inproceedings{Arashloo16snap,
 author={Mina Tahmasbi Arashloo and Yaron Koral and Michael Greenberg and Jennifer Rexford and and David Walker},
 title={{SNAP}: Stateful Network-Wide Abstractions for Packet Processing},
 year={2016},
-booktitle={SIGCOMM}
+booktitle={SIGCOMM},
+doi={10.1145/2934872.2934892},
 }
 
 @inproceedings{Beckett16temporal,
 author={Ryan Beckett and Michael Greenberg and David Walker},
 title={Temporal {NetKAT}},
 year={2016},
-booktitle={PLDI}
+booktitle={PLDI},
+doi={10.1145/2908080.2908108}
 }
 
 @misc{Greenberg15hope,
@@ -299,7 +322,8 @@ note={PLVNET}
 author={Cole Schlesinger and Michael Greenberg and David Walker},
 title={Concurrent NetCore: From Policies to Pipelines},
 year={2014},
-booktitle={ICFP}
+booktitle={ICFP},
+doi={10.1145/2628136.2628157}
 }
 
 @phdthesis{Greenberg13thesis,
@@ -344,7 +368,8 @@ ISSN={1081-6011},}
   author = {Jo\~ao Filipe Belo and Michael Greenberg and Atsushi Igarashi and Benjamin C. Pierce},
   title = {Polymorphic Contracts},
   year = {2011},
-  booktitle = {ESOP}
+  booktitle = {ESOP},
+  doi={10.1007/978-3-642-19718-5\_2},
 }
 
 @inproceedings{Borgstrom11bayesian,
@@ -358,7 +383,8 @@ ISSN={1081-6011},}
   author = {Davi M. J. Barbosa and Julien Cretin and Nate Foster and Michael Greenberg and Benjamin C. Pierce},
   title = {Matching Lenses: Alignment and View Update},
   year = {2010},
-  booktitle = {ICFP}
+  booktitle = {ICFP},
+  doi = {0.1145/1863543.1863572},
 }
 
 @techreport{Barbosa10matchingtr,
@@ -387,7 +413,8 @@ ISSN={1081-6011},}
   author = {Michael Greenberg and Benjamin C. Pierce and Stephanie Weirich},
   title = {Contracts Made Manifest},
   year = {2010},
-  booktitle = {POPL}
+  booktitle = {POPL},
+  doi = {10.1145/1706299.1706341},
 }
 
 @book{Pierce18sf,
@@ -402,7 +429,8 @@ ISSN={1081-6011},}
   author = {Leo Meyerovich and Arjun Guha and Jacob Baskin and Gregory H. Cooper and Michael Greenberg and Aleks Bromfield and Shriram Krishnamurthi},
   title = {Flapjax: A Programming Language for Ajax Applications},
   year = {2009},
-  booktitle = {OOPSLA}
+  booktitle = {OOPSLA},
+  doi = {10.1145/1640089.1640091},
 }
 
 @inproceedings{Fernandez08genericpadsml,
@@ -411,7 +439,8 @@ ISSN={1081-6011},}
   booktitle = {PADL},
   pages = {133--149},
   year = {2008},
-  url = {http://www.springerlink.com/content/y2v61801m8273k73}
+  url = {http://www.springerlink.com/content/y2v61801m8273k73},
+  doi = {10.1007/978-3-540-77442-6\_10}
 }
 
 @unpublished{Greenberg07views,
@@ -436,5 +465,5 @@ ISSN={1081-6011},}
  booktitle = {FSE},
  year = {2004},
  pages = {137--146},
- doi = {http://doi.acm.org/10.1145/1029894.1029916}
+ doi = {10.1145/1029894.1029916}
 }
