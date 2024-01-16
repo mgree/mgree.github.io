@@ -33,4 +33,4 @@ jobs:
             User ${{ secrets.HOST_USER }}
             IdentityFile ~/.ssh/id_rsa
           EOF
-          rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .ssh --exclude .gitignore --exclude .DS_Store -Carv . deploy:
+          rsync --exclude '*~' --exclude Makefile --exclude .git --exclude .ssh --exclude .gitignore --exclude .DS_Store -Carv . deploy:greenberg.science
