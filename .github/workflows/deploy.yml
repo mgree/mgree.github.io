@@ -28,7 +28,11 @@ jobs:
           prerelease: true
           title: "Built site"
           files: |
-            *
+            index.html
+            mgree.bib
+            mgree_bib.html
+            name.mp3
+            papers.html
             css/*
             images/*
             papers/*
