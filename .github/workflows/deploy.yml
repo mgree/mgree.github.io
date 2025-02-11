@@ -29,6 +29,12 @@ jobs:
           title: "Built site"
           files: |
             *
+            css/*
+            images/*
+            papers/*
+            popl15/*
+            students/*
+            talks/*
 
       - name: Deploy
         run: |
