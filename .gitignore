@@ -2,3 +2,4 @@
 .DS_Store
 courses
 stevens_deploy.sh
+pull.sh
