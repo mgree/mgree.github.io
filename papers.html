@@ -29,9 +29,9 @@
 <body>
  <div class="content">
   <div class="header bar">
-    <span id="left">MGREENBE.PAPERS(5)</span>
-    <span id="middle">Publications &mdash; <a href="index.html">Michael Greenberg</a></span>
-    <span id="right">MGREENBE.PAPERS(5)</span>
+    <span class="left">MGREENBE.PAPERS(5)</span>
+    <span class="middle">Publications &mdash; <a href="index.html">Michael Greenberg</a></span>
+    <span class="right">MGREENBE.PAPERS(5)</span>
   </div>
 
   <div class="section" id="name">
@@ -44,7 +44,7 @@
   <div class="section" id="synopsis">
     <h1>SYNOPSIS</h1>
 
-    <div id="bib"><strong>mgreenbe.papers</strong> --bibtex=<a href="mgree_bib.html">html</a></div>
+    <div id="bibhtml"><strong>mgreenbe.papers</strong> --bibtex=<a href="mgree_bib.html">html</a></div>
     <div id="bib"><strong>mgreenbe.papers</strong> --bibtex=<a href="mgree.bib">bib</a></div>
   </div>
 
@@ -62,6 +62,26 @@
 
     <div class="options papers">
 
+      <div class="option">--atc-2025</div>
+      <div class="description">
+        <div class="title"><a href="papers/2025atc_koala.pdf">The Koala Benchmarks for the Shell: Characterization and Implications</a></div>
+        <div class="authors">Evangelos Lamprou, Ethan Williams, Georgios Kaoukis, Zhuoxuan Zhang, Michael Greenberg, Konstantinos Kallas, Lukas Lazarek, Nikos Vasilakis</div>
+        <div class="downloads">
+          <a href="mgree_bib.html#Lamprou25koala">bib</a>
+        </div>
+        <div class="notes">Awarded "Best Paper" at ATC 2025.
+        </div>
+      </div>
+
+      <div class="option">--hotos-2025</div>
+      <div class="description">
+        <div class="title"><a href="papers/2025hotos_sash.pdf">From Ahead-of- to Just-in-Time and Back Again: Static Analysis for Unix Shell Programs</a></div>
+        <div class="authors">Lukas Lazarek, Seong-Heon Jung, Evangelos Lamprou, Zekai Li, Anirudh Narsipur, Eric Zhao, Michael Greenberg, Konstantinos Kallas, Konstantinos Mamouras, Nikos Vasilakis</div>
+        <div class="downloads">
+          <a href="mgree_bib.html#Lazarek25sash">bib</a>
+        </div>
+      </div>
+
       <div class="option">--oopsla-2024a</div>
       <div class="description">
         <div class="title"><a href="papers/2024oopsla_formulog.pdf">Making Formulog Fast: An Argument for Unconventional
@@ -76,7 +96,7 @@ Datalog Evaluation</a></div>
       <div class="option">--oopsla-2024b</div>
       <div class="description">
         <div class="title"><a href="papers/2024oopsla_multiplt.pdf">Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs</a></div>
-        <div class="authors">Federico Cassano, John Gouwar, Francesca Lucchetti, Claire Schlesinger, Anders Freeman, Carolyn Jane Anderson, Molly Q Feldman, Michael Greenberg, Abhinav Jangda, Arjun Guha<</div>
+        <div class="authors">Federico Cassano, John Gouwar, Francesca Lucchetti, Claire Schlesinger, Anders Freeman, Carolyn Jane Anderson, Molly Q Feldman, Michael Greenberg, Abhinav Jangda, Arjun Guha</div>
         <div class="downloads">
           <a href="https://arxiv.org/abs/2308.09895">arXiv</a>
           <a href="mgree_bib.html#Cassano24multiplt">bib</a>
@@ -475,11 +495,9 @@ Abstractions for Packet Processing</a></div>
           </div>
       </div>
 
-      <div class="option venue">--phd-2013</div>
+      <div class="option venue"><a id="dissertation">--phd-2013</a></div>
       <div class="description">
-        <div class="title"><a name="dissertation">
-              <a href="papers/thesis.pdf">Manifest Contracts</a></div>
-            </a>
+          <div class="title"><a href="papers/thesis.pdf">Manifest Contracts</a></div>
           <div class="authors">Michael Greenberg</div>
           <div class="downloads">
             <a href="mgree_bib.html#Greenberg13manifest">bib</a>
@@ -503,11 +521,9 @@ Abstractions for Packet Processing</a></div>
           </div>
       </div>
 
-      <div class="option venue">--esop-2011a</div>
+      <div class="option venue"><a id="esop2011fh">--esop-2011a</a></div>
       <div class="description">
-        <a name="esop2011fh">
-            <div class="title"><a href="papers/esop2011_fh.pdf">Polymorphic
-                      Contracts</a></div></a>
+        <div class="title"><a href="papers/esop2011_fh.pdf">Polymorphic Contracts</a></div>
           <div class="authors">Jo&atilde;o Filipe Belo,
             Michael Greenberg, Atsushi Igarashi, and Benjamin
             C. Pierce</div>
@@ -590,13 +606,9 @@ Abstractions for Packet Processing</a></div>
           </div>
       </div>
 
-      <div class="option venue">--oopsla-2009</div>
+      <div class="option venue"><a id="flapjax">--oopsla-2009</a></div>
       <div class="description">
-        <a name="flapjax">
-            <div class="title"><a href="papers/oopsla2009_flapjax.pdf">Flapjax: A
-                      Programming Language for Ajax
-              Applications</a></div>
-            </a>
+        <div class="title"><a href="papers/oopsla2009_flapjax.pdf">Flapjax: A Programming Language for Ajax Applications</a></div>
           <div class="authors">Leo Meyerovich, Arjun
             Guha, Jacob Baskin, Gregory H. Cooper, Michael Greenberg,
             Aleks Bromfield, and Shriram Krishnamurthi</div>
@@ -670,51 +682,51 @@ Abstractions for Packet Processing</a></div>
 
     <div class="indent">
     <a href="http://www.weaselhat.com/">
-      <img alt="a weasel in a hat (weaselhat icon)" src="images/weaselhat.ico" />
+      <img alt="a weasel in a hat (weaselhat icon)" src="images/weaselhat.ico">
       blog(1)
     </a>,
     <a href="https://dblp.org/pid/06/4387">
-      <img alt="dblp icon" src="images/dblp.ico" />
+      <img alt="dblp icon" src="images/dblp.ico">
       dblp(7)
     </a>,
     <a href="https://github.com/mgree">
-      <img alt="github icon" src="images/github.ico" />
+      <img alt="github icon" src="images/github.ico">
       github(2)
     </a>,
     <a href="https://scholar.google.com/citations?user=_LSrWlwAAAAJ">
-      <img alt="google scholar icon" src="images/scholar.ico" />
+      <img alt="google scholar icon" src="images/scholar.ico">
       google&nbsp;scholar(7)
     </a>,
     <a href="index.html">
       mgreenbe(1)
     </a>,
     <a href="https://orcid.org/0000-0003-0014-7670">
-      <img alt="orcid icon" src="images/orcid.ico" />
+      <img alt="orcid icon" src="images/orcid.ico">
       orcid(7)
     </a>,
     <a href="https://conf.researchr.org/profile/conf/michaelgreenberg">
-      <img alt="sigplan researchr icon" src="images/researchr.ico" />
+      <img alt="sigplan researchr icon" src="images/researchr.ico">
       researchr(7)
     </a>,
     <a href="https://www.twitch.tv/prof_greenberg">
-      <img alt="twitch icon" src="images/twitch.ico" />
+      <img alt="twitch icon" src="images/twitch.ico">
       twitch(1)
     </a>,
     <a href="https://twitter.com/mgrnbrg">
-      <img alt="twitter icon" src="images/twitter.ico" />
+      <img alt="twitter icon" src="images/twitter.ico">
       twitter(6)
     </a>,
     <a href="https://www.youtube.com/channel/UCftOsVsmNa8F7s3RPj9OeXw">
-      <img alt="youtube icon" src="images/youtube.ico" />
+      <img alt="youtube icon" src="images/youtube.ico">
       youtube(1)
     </a>
     </div>
   </div>
 
   <div class="footer bar">
-    <span id="left">Stevens</span>
-    <span id="middle">Last change: MAY 2025</span>
-    <span id="right">47</span>
+    <span class="left">Stevens</span>
+    <span class="middle">Last change: MAY 2025</span>
+    <span class="right">47</span>
   </div>
 
   <div id="pager">
