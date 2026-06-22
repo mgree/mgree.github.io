@@ -22,26 +22,6 @@ jobs:
             make
             tree
 
-      - name: Post 'latest' GitHub prerelease
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Built site"
-          files: |
-            index.html
-            mgree.bib
-            mgree_bib.html
-            name.mp3
-            papers.html
-            css/*
-            images/*
-            papers/*
-            popl15/*
-            students/*
-            talks/*
-
       - name: Deploy
         run: |
           mkdir ~/.ssh
